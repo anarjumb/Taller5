@@ -15,14 +15,14 @@ public class Sistema {
         
         // Producir Helado
         Helado helado_vainilla = new Helado("Vainilla");
-        OperacionesAderezo.anadirAderezoPostre(helado_vainilla, Aderezo.CREMA);
-        OperacionesAderezo.anadirAderezoPostre(helado_vainilla, Aderezo.FRUTILLA);
+        OperacionesAderezo.anadirAderezoPostre(helado_vainilla, new Aderezo("Chispas"));
+        OperacionesAderezo.anadirAderezoPostre(helado_vainilla, new Aderezo("Frutilla"));
         System.out.println(helado_vainilla);
         
         // Producir Pastel
         Pastel pastel_chocolate = new Pastel("Chocolate");
-        OperacionesAderezo.quitarAderezoPostre(pastel_chocolate, Aderezo.CREMA);
-        OperacionesAderezo.anadirAderezoPostre(pastel_chocolate, Aderezo.FRUTILLA);
+        OperacionesAderezo.quitarAderezoPostre(pastel_chocolate, new Aderezo("Crema"));
+        OperacionesAderezo.anadirAderezoPostre(pastel_chocolate, new Aderezo("Frutillas"));
         System.out.println(pastel_chocolate);
         
         

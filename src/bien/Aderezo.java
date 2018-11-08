@@ -9,7 +9,28 @@ package bien;
  *
  * @author Pedro Mendoza
  */
-public enum Aderezo {
-    MALVAVISCOS,GRAGEAS,CHISPAS,FRUTILLA,CREMA
+public class Aderezo {
+    private String nombre;
+    
+    public Aderezo(){
+        
+    }
+
+    public Aderezo(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+    
+    @Override
+    public String toString(){
+        return this.nombre;
+    }
     
 }
